@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMABOARD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="./images/luma brand.svg" >
+
+         <div class="time-and-dark-light-mode">
+           <div class="time">
+        <p id="time-hours">10:30</p>
+        <p><span id="time-day">tuesday</span>, <span id="time-month">october</span> <span id="time-date">29</span>  </p>             
+           </div>
+                 
+        </div>
+
+    </nav>
+    <!-- this is the body part now we move in to the real code part -->
+     <main>
+        <h1>Clarity. Focus. Progress.</h1>
+        <div class="cards">
+
+            <!-- this is the place for the weather app -->
+<div class="card" id="weather-card">
+    <h3>Weather</h3>
+    <div class="search">
+     <!-- input id changed to weather-input to avoid duplicate id with the display element -->
+     <input type="text" placeholder="enter city name" spellcheck="false" id="weather-input">
+     <button id="search-weather-button"><img src="./images/MagnifyingGlass.svg"></button>
+    </div>
+   <div class="weather">
+    <img src="./images/CloudSun.svg" id="condition">
+    <section style="text-align: center;">
+    <h2 ><span id="weather-value">12</span>°c</h2>
+    <h3 id="weather-city">Addis ababa </h3>   
+    <button id="refresh-button"><img src="./images/ArrowCounterClockwise.svg" class="refresh-icon"></button>
+    </section>
+ 
+   </div> 
+</div>
+
+           <!-- this is the place for the total time card -->
+<div class="card" id="total-time-card">
+<h3>Total time</h3>
+<div>
+    <section>
+        <h2 class="time-card-heading">Today:</h2>
+        <h3 id="total-time-today">12hrs  20 mins </h3>
+    </section>
+    <section>
+        <h2 class="time-card-heading">This week:</h2>
+        <h3 id="total-time-this-week">1 day 3 hours</h3>
+    </section>
+    <section>
+        <h2 class="time-card-heading">This month:</h2>
+        <h3 id="total-time-this-month">20 days  2 hours </h3>
+    </section>
+</div>
+
+</div><!-- this is the ending div of the total time  card-->
+
+           <!-- this is the place for the timer / promodoro card-->
+ <div class="card" id="timer-card">
+  <h3>Timer</h3>
+<div class="timer-card-content">
+    <div class="timer-next-box timer-next-work">
+<img src="./images/following.svg">
+<h1 id="timer-next-time">5:00</h1>
+<section>
+   <button id="timer-next-time-increase"><img src="./images/plus.svg"></button> 
+    <button id="timer-next-time-decrease"><img src="./images/minus.svg"></button>
+</section>
+    </div>
+    <span>
+    <h1 id="timer-current-time">1:00:00</h1>
+    <div class="timer-control-buttons">
+        <img src="./images/X.svg">
+        <img src="./images/Play.svg" class="big">
+        <img src="./images/next.svg">
+    </div>        
+    </span>    
+</div>
+    
+
+  
+
+
+ </div><!-- this is the end of the timer card-->
+
+          <!-- this is the to do list card-->
+  <div class="card" id="to-do-list-card">
+    <section class="to-do-list-input-header-section">
+    <h3>To-do List</h3>
+    <section class="to-do-list-input-section">   <input placeholder="add a task" id="to-do-list-input"><button id="to-do-list-add-task-button"><img src="./images/plus.svg"></button></section>        
+    </section>
+    <ul id="to-do-list-lists-container">
+        
+    </ul>
+ 
+  </div>
+
+
+
+        </div> <!-- this the cards div ending -->
+
+
+        <!-- TO DO : add the quote part -->
+         <div class="quote-section">
+            <h2 id="quote">if it was easy every body would have done it </h2>
+            <p id="author">@ some one cool</p>
+         </div>
+         <footer>made by <a href="https://linktr.ee/eyuz_1">Eyuel Wondimagegn</a></footer>
+     </main>
+    <script src="script.js"></script>
+</body>
+</html>
